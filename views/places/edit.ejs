@@ -1,0 +1,53 @@
+<% layout('/layout/boilerplate') %>
+ 
+    <div class="row">
+        <h1 class="text-center">Update the Current Place</h1>
+        <div class="col-md-6 offset-md-3">
+            <form action="/places/<%= places._id %>?_method=PUT" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
+                <div class="mb-3">
+                    <label class='form-label' for="name">Place Name</label>
+                    <input class='form-control' type="text" name="places[name]" id="name" value="<%= places.name %>" required>
+                    <div class="valid-feedback">OK</div>
+                </div>
+                <div class="mb-3">
+                    <label class='form-label' for="location"> Place Location</label>
+                    <input class='form-control' type="text" name="places[location]" id="location" value="<%= places.location %>" required>
+                    <div class="valid-feedback">OK</div>
+                </div>
+                <div class="mb-3">
+                    <label class='form-label' for="image">Image</label>
+                    <input class='form-control' type="file" name="image" id="image" multiple>
+                    <div class="valid-feedback">OK</div>
+                </div>
+                <div class="mb-3">
+                    <label class='form-label' for="description">Description</label>
+                    <textarea class='form-control' type="text" name="places[description]" id="description" required> <%= places.description %> </textarea>
+                    <div class="valid-feedback">OK</div>
+                </div>
+                <div class="mb-3">
+                    <label class='form-label' for="price">Cost</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price">$</span>
+                        <input type="text" class="form-control" id='price' name="places[price]" required placeholder="0.00" aria-label="price" aria-describedby="price" value="<%= places.price %>">
+                        <div class="valid-feedback">OK</div>
+                      </div>
+                </div>
+                <div class="mb-3">
+                    <% places.image.forEach(function(img, i){  %> 
+                        <img src="<%= img.url %> " class="img-thumbnail">
+                        <div class="form-check-inline">
+                            <input type="checkbox" name="delImages[]" id="image-<%=i%>" value="<%=img.filename%>">
+                            
+                        </div>
+                        <label for="image-<%=i%>">Delete</label>
+                    <% }) %> 
+                </div>
+            <div class="mb-3">
+                <button class='btn btn-primary col-12 mx-auto mt-5'>Update Place</button>
+            </div>
+            
+            </form>
+            <a class='btn btn-warning col-12 mx-auto' href="/places/<%= places._id %>">Cancel Edit</a>
+        </div>
+        
+    </div>

@@ -1,0 +1,48 @@
+<% layout('/layout/boilerplate') %>
+
+<div class="row">
+    <h1 class="text-center">Add A New Place</h1>
+    <div class="col-md-6 offset-md-3">
+        <form action="/places" method="POST" class='needs-validation' novalidate enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class='form-label' for="name"> Place Name</label>
+                <input class='form-control' type="text" name="places[name]" id="name" required>
+                <div class="valid-feedback">OK</div>
+            </div>
+            <div class="mb-3">
+                <label class='form-label' for="location"> Place Location</label>
+                <input class='form-control' type="text" name="places[location]" id="location" required>
+                <div class="valid-feedback">OK</div>
+            </div>
+            <div class="mb-3">
+                <label class='form-label' for="image">Upload Images</label>
+                <input class='form-control' type="file" name="image" id="image"  multiple>
+                <span class="form-file-text text-muted text-sm">Images: png, jpeg, jpg</span>
+                <div class="valid-feedback">OK</div>
+                <!-- <input type="file" name="image" id="" multiple>
+                <div class="valid-feedback">OK</div> -->
+            </div>
+            <div class="mb-3">
+                <label class='form-label' for="description">Description</label>
+                <textarea class='form-control' type="text" name="places[description]" id="description" required></textarea>
+                <div class="valid-feedback">OK</div>
+            </div>
+            <div class="mb-3">
+                <label class='form-label' for="price">Cost</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price">$</span>
+                    <input type="text" class="form-control" id='price' name="places[price]" placeholder="0.00" aria-label="price" aria-describedby="price">
+                  </div>
+            </div>
+        <div class="mb-3">
+            <button class='btn btn-primary col-12 mx-auto mt-5'>Add Place</button>
+        </div>
+        </form>
+        <!-- <a href="/places">Back to Places</a> -->
+    </div>
+    
+</div>
+
+
+    
+   

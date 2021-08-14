@@ -1,0 +1,16 @@
+#map {
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 1%;
+}
+
+#card-index-image {
+    width: 515px;
+    height: 280px;
+}
+
+.card-img-show > img{
+    width: 100%;
+    height: 100%;
+}
