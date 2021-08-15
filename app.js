@@ -41,6 +41,7 @@ const multer = require('multer');
 const upload = multer({storage});
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/place';
+const secret = process.env.SECRET || 'thisisjustasecrettest';
  //|| 'mongodb://localhost:27017/place'
 //const {MongoStore} = require('connect-mongo');
 const MongoDBStore = require('connect-mongo')//(session);
@@ -61,7 +62,7 @@ db.once('open', () => {
 
 const app = express();
 
-const secret = process.env.SECRET || 'thisisjustasecrettest';
+
 
 const store = new MongoDBStore({
     mongoUrl: dbUrl,
