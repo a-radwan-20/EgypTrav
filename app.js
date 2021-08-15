@@ -99,6 +99,7 @@ const scriptSrcUrls = [
     "https://kit.fontawesome.com/",
     "https://cdnjs.cloudflare.com/",
     "https://cdn.jsdelivr.net",
+    "https://still-anchorage-21149.herokuapp.com/",
 ];
 //This is the array that needs added to
 const styleSrcUrls = [
@@ -108,12 +109,14 @@ const styleSrcUrls = [
     "https://fonts.googleapis.com/",
     "https://use.fontawesome.com/",
     "https://cdn.jsdelivr.net",
+    "https://still-anchorage-21149.herokuapp.com/",
 ];
 const connectSrcUrls = [
     "https://api.mapbox.com/",
     "https://a.tiles.mapbox.com/",
     "https://b.tiles.mapbox.com/",
     "https://events.mapbox.com/",
+    "https://still-anchorage-21149.herokuapp.com/",
 ];
 const fontSrcUrls = [];
 app.use(
