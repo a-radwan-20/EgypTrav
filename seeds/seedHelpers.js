@@ -44,27 +44,6 @@ module.exports.locations = [{
 },
 ]
 
-// module.exports.descriptors = [
-//     'Visit',
-//     'Village',
-//     'Desert',
-//     'Pond',
-//     'The Amazing',
-//     'Group Camp',
-//     'Hike',
-//     'Horse Camp',
-//     'Camp',
-//     'The Beauty',
-//     'Backcountry',
-//     'River',
-//     'Spring',
-//     'Sands',
-//     'Hunting Camp',
-//     'Visit',
-//     'Explore',
-//     'Come to',
-//     'Here'
-// ]
 
 
 // module.exports.locations = [
