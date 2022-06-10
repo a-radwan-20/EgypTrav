@@ -1,5 +1,5 @@
 ## EgypTRAV Web App 
-### EgypTRAV is a fully CRUD operations web app, the app follows the MVC design pattern and the RESTful routes best practice. Working best with Google Chrome browser.
+### EgypTRAV is a fully CRUD operations web app, the app follows the MVC design pattern and the RESTful routes best practice.
 
  Check it here: https://still-anchorage-21149.herokuapp.com/
 
